@@ -64,8 +64,13 @@ def get_p2_name(p1):
         return input(f">>> {bold}")
 
     u_b = p2n()
-    while u_b == p1:
-        print(f"{r}Players cannot have the same name!")
+    while u_b in [p1, ""]:
+        if u_b == p1:
+            print(f"{r}Players cannot have the same name!")
+        elif u_b == "":
+            print(f"{r}Names cannot be blank!")
+        else:
+            print(f"{r}how did you get here do tell")
         u_b = p2n()
     return u_b
 
@@ -81,8 +86,14 @@ def startup(cont=False):
         else:
             print("Great! In that case, jump right in!")
 
-    print(r, "\nPlayer 1: Input your name")
-    user_a = input(f">>> {bold}")
+    def p1n():
+        print(r, "\nPlayer 1: Input your name")
+        return input(f">>> {bold}")
+
+    user_a = p1n()
+    while user_a == "":
+        print(f"{r}Names cannot be blank!")
+        user_a = p1n()
     print(f"{r}Player 1's name set to {bold}{user_a}{r}")
 
     user_b = get_p2_name(user_a)
