@@ -4,7 +4,7 @@ import tabulate
 bold = "\033[1m"
 r = "\033[0m"
 heads = bold + "\033[95m\033[91m"
-os = bold + "\033[96m"
+os = bold + "\033[94m"
 xs = bold + "\033[92m"
 ttt_help = "How to play:\n*wip check back later*"
 
