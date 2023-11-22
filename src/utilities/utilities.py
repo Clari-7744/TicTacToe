@@ -1,4 +1,5 @@
 import random
+
 import tabulate
 
 bold = "\033[1m"
@@ -54,9 +55,7 @@ def get_p2_name(p1):
     """
     Gets Player 2's name and whether or not it should be an AI.
     """
-    if y_n(
-        "Would you like to play against an AI? (Will prompt for Player 2 if you don't say yes)"
-    ):
+    if y_n("Would you like to play against an AI? (Will prompt for Player 2 if you don't say yes)"):
         return "AI"
 
     def p2n():

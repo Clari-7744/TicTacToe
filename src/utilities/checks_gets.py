@@ -1,5 +1,7 @@
 import random
-from utilities import bold as b, r
+
+from utilities import bold as b
+from utilities import r
 
 # CHECKS
 

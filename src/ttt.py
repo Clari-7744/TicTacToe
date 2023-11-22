@@ -1,17 +1,18 @@
+#!venv/bin/python3.11
 """
 TicTacToe game by Clari
 Made for the Game Design Merit Badge
 """
 from utilities import (
-    startup,
-    make_board,
-    y_n,
-    print_board,
-    get_move,
-    validate_text,
     end_check,
+    get_move,
+    make_board,
+    print_board,
     r,
+    startup,
     ttt_help,
+    validate_text,
+    y_n,
 )
 
 users = startup()

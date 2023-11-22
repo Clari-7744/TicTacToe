@@ -1,2 +1,2 @@
-run="python3 ttt.py"
+run="python3 src/ttt.py"
 language="python3"
